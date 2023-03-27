@@ -1,0 +1,49 @@
+:root {
+	--font: 'Rubik', sans-serif;
+	--color-primary: hsl(129, 75%, 27%);
+	--color-secondary: hsl(154, 46%, 47%);
+}
+:where(html, body) {
+	font-family: var(--font);
+}
+:where(*) {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:where(button, input) {
+	background-color: transparent;
+	border: none;
+}
+:where(input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea) {
+	font-size: 1rem;
+	line-height: 1.5;
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 0.25rem;
+}
+:where(.container) {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+:where(.branding) img {
+	filter: drop-shadow(5px 5px 5px #222);
+}
+:where(.flex) { display: flex; }
+:where(.flex-col) { flex-direction: column; }
+:where(.justify-center) { justify-content: center; }
+:where(.items-center) { align-items: center; }
+:where(.mt-0) { margin-top: 0; }
+:where(.mt-1) { margin-top: .25rem; }
+:where(.mt-2) { margin-top: .5rem; }
+:where(.mt-3) { margin-top: .75rem; }
+:where(.mt-4) { margin-top: 1rem; }
+:where(.mt-8) { margin-top: 2rem; }
+:where(.mt-12) { margin-top: 3rem; }
+:where(.w-60) { width: 60%; }
+:where(.w-70) { width: 70%; }
+:where(.w-80) { width: 80%; }
+:where(.w-90) { width: 90%; }
+:where(.w-100) { width: 100%; }
+:where(.m-inline-auto) { margin-inline: auto; }
+:where(.text-center) { text-align: center; }
